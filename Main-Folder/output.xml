@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-31T18:11:31.143964" rpa="false" schemaversion="5">
+<suite id="s1" name="TestAutomationPTDOT" source="D:\Automation\Facebook\Main-Folder\TestAutomationPTDOT.robot">
+<test id="s1-t1" name="LoginCase" line="11">
+<kw name="OpenWebBrowser" owner="Functions">
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-31T18:11:32.015969" level="INFO">Opening browser 'Chrome' to base url 'https://www.facebook.com/login'.</msg>
+<msg time="2024-05-31T18:11:37.404965" level="WARN">The chromedriver version (124.0.6367.91) detected in PATH at C:\Users\ASUS\AppData\Local\Programs\Python\Python312\chromedriver.exe might not be compatible with the detected chrome version (125.0.6422.114); currently, chromedriver 125.0.6422.141 is recommended for chrome 125.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>${HomePage}</arg>
+<arg>${WebBrowser}</arg>
+<arg>options=add_argument( "${HeadStatus}"); add_argument( "${WindowSize}" )</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-31T18:11:32.014971" elapsed="57.153921"/>
+</kw>
+<arg>'${WebBrowser}' in ['Chrome','firefox']</arg>
+<arg>Open Browser</arg>
+<arg>${HomePage}</arg>
+<arg>${WebBrowser}</arg>
+<arg>options=add_argument( "${HeadStatus}"); add_argument( "${WindowSize}" )</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-05-31T18:11:32.013973" elapsed="57.155776"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${WebBrowser}' in ['edge','safari','Opera']</arg>
+<arg>Open Browser</arg>
+<arg>${HomePage}</arg>
+<arg>${WebBrowser}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-05-31T18:12:29.170779" elapsed="0.001101"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-31T18:12:29.171880" elapsed="0.326201"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-05-31T18:12:29.500069" level="INFO">Opened the browser successfully</msg>
+<arg>Opened the browser successfully</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-05-31T18:12:29.499447" elapsed="0.000622"/>
+</kw>
+<status status="PASS" start="2024-05-31T18:11:32.011979" elapsed="57.489085"/>
+</kw>
+<kw name="Set Window Size" owner="SeleniumLibrary">
+<arg>2560</arg>
+<arg>1920</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" start="2024-05-31T18:12:29.504237" elapsed="0.725462"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-31T18:12:30.585236" level="INFO">Element '//img[@alt="Facebook"]' is displayed.</msg>
+<arg>//img[@alt="Facebook"]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-31T18:12:30.231696" elapsed="0.353540"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-31T18:12:30.719217" level="INFO">Element '//input[@placeholder="Email address or phone number"]' is displayed.</msg>
+<arg>//input[@placeholder="Email address or phone number"]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-31T18:12:30.588228" elapsed="0.130989"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-31T18:12:30.845527" level="INFO">Element '//input[@placeholder="Password"]' is displayed.</msg>
+<arg>//input[@placeholder="Password"]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-31T18:12:30.720872" elapsed="0.124655"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-31T18:12:30.991839" level="INFO">Element '//button[@name="login"]' is displayed.</msg>
+<arg>//button[@name="login"]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-31T18:12:30.848521" elapsed="0.144473"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-31T18:12:32.995127" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-31T18:12:30.993836" elapsed="2.001291"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-31T18:12:32.997130" level="INFO">Clicking element '//button[@name="login"]'.</msg>
+<arg>//button[@name="login"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-31T18:12:32.996133" elapsed="2.198450"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-31T18:12:40.197162" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-31T18:12:35.196575" elapsed="5.000587"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-31T18:12:40.249980" level="INFO">Element '//div[@id="email_container"]' is displayed.</msg>
+<arg>//div[@id="email_container"]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-31T18:12:40.200117" elapsed="0.050860"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-31T18:12:43.253289" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-31T18:12:40.252072" elapsed="3.001217"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-31T18:12:43.885778" level="INFO">Element '(//div[contains(.,"Invalid username or password")])[8]' is displayed.</msg>
+<arg>(//div[contains(.,"Invalid username or password")])[8]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-31T18:12:43.254933" elapsed="0.630845"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//input[@placeholder="Password"]</arg>
+<arg>timeout=30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-31T18:12:43.887848" elapsed="0.037823"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-31T18:12:43.927666" level="INFO">Clicking element '//input[@placeholder="Password"]'.</msg>
+<arg>//input[@placeholder="Password"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-31T18:12:43.926667" elapsed="0.875555"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-31T18:12:44.804219" level="INFO">Typing text 'invalidpwd' into text field '//input[@placeholder="Password"]'.</msg>
+<arg>//input[@placeholder="Password"]</arg>
+<arg>${Pwd1}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-31T18:12:44.804219" elapsed="0.625596"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-31T18:12:47.432547" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-31T18:12:45.430811" elapsed="2.001736"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-31T18:12:47.435589" level="INFO">Clicking element '//button[@name="login"]'.</msg>
+<arg>//button[@name="login"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-31T18:12:47.434779" elapsed="0.189081"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-31T18:12:52.626024" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-31T18:12:47.624858" elapsed="5.001166"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-31T18:12:52.666880" level="INFO">Element '(//div[contains(.,"Invalid username or password")])[8]' is displayed.</msg>
+<arg>(//div[contains(.,"Invalid username or password")])[8]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-31T18:12:52.626985" elapsed="0.039895"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-31T18:12:54.669659" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-31T18:12:52.668875" elapsed="2.000784"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//input[@placeholder="Email address or phone number"]</arg>
+<arg>timeout=30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-31T18:12:54.670655" elapsed="0.030915"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-31T18:12:54.702568" level="INFO">Clicking element '//input[@placeholder="Email address or phone number"]'.</msg>
+<arg>//input[@placeholder="Email address or phone number"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-31T18:12:54.702568" elapsed="0.136634"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-31T18:12:54.841283" level="INFO">Typing text 'invalidgmail@gmail.com' into text field '//input[@placeholder="Email address or phone number"]'.</msg>
+<arg>//input[@placeholder="Email address or phone number"]</arg>
+<arg>${UName1}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-31T18:12:54.840199" elapsed="0.185507"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-31T18:12:55.027698" level="INFO">Clicking element '//button[@name="login"]'.</msg>
+<arg>//button[@name="login"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-31T18:12:55.027698" elapsed="0.098785"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-31T18:13:00.130945" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-31T18:12:55.127478" elapsed="5.004463"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-31T18:13:01.073397" level="INFO">Element '(//div[contains(.,"Invalid username or password")])[8]' is displayed.</msg>
+<arg>(//div[contains(.,"Invalid username or password")])[8]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-31T18:13:00.134932" elapsed="0.939462"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-31T18:13:03.075729" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-31T18:13:01.075393" elapsed="2.000336"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//input[@placeholder="Email address or phone number"]</arg>
+<arg>timeout=30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-31T18:13:03.076845" elapsed="0.042821"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-31T18:13:03.121616" level="INFO">Clicking element '//input[@placeholder="Email address or phone number"]'.</msg>
+<arg>//input[@placeholder="Email address or phone number"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-31T18:13:03.120617" elapsed="0.102724"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-31T18:13:03.225338" level="INFO">Typing text 'invalidgmail@gmail.com' into text field '//input[@placeholder="Email address or phone number"]'.</msg>
+<arg>//input[@placeholder="Email address or phone number"]</arg>
+<arg>${UName1}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-31T18:13:03.224338" elapsed="1.209226"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//input[@placeholder="Password"]</arg>
+<arg>timeout=30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-31T18:13:04.435838" elapsed="0.032635"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-31T18:13:04.469470" level="INFO">Clicking element '//input[@placeholder="Password"]'.</msg>
+<arg>//input[@placeholder="Password"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-31T18:13:04.469470" elapsed="0.097737"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-31T18:13:04.569764" level="INFO">Typing text 'invalidpwd' into text field '//input[@placeholder="Password"]'.</msg>
+<arg>//input[@placeholder="Password"]</arg>
+<arg>${Pwd1}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-31T18:13:04.568202" elapsed="0.153588"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-31T18:13:06.723925" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-31T18:13:04.723786" elapsed="2.000139"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-31T18:13:06.725926" level="INFO">Clicking element '//button[@name="login"]'.</msg>
+<arg>//button[@name="login"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-31T18:13:06.724970" elapsed="0.096701"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-31T18:13:11.825304" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-31T18:13:06.823663" elapsed="5.001641"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-31T18:13:11.827260" level="INFO">Clicking element '//button[@name="login"]'.</msg>
+<arg>//button[@name="login"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-31T18:13:11.826303" elapsed="0.112656"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-31T18:13:16.941427" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-31T18:13:11.939956" elapsed="5.001471"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-31T18:13:16.992293" level="INFO">Element '(//div[contains(.,"Invalid username or password")])[8]' is displayed.</msg>
+<arg>(//div[contains(.,"Invalid username or password")])[8]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-31T18:13:16.942424" elapsed="0.049869"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-31T18:13:18.994766" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-31T18:13:16.994286" elapsed="2.000480"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//input[@placeholder="Email address or phone number"]</arg>
+<arg>timeout=30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-31T18:13:18.996757" elapsed="0.041180"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-31T18:13:19.039641" level="INFO">Clicking element '//input[@placeholder="Email address or phone number"]'.</msg>
+<arg>//input[@placeholder="Email address or phone number"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-31T18:13:19.039641" elapsed="0.105718"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-31T18:13:19.147354" level="INFO">Typing text 'karakaramel88@gmail.com' into text field '//input[@placeholder="Email address or phone number"]'.</msg>
+<arg>//input[@placeholder="Email address or phone number"]</arg>
+<arg>${UName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-31T18:13:19.147354" elapsed="0.243347"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//input[@placeholder="Password"]</arg>
+<arg>timeout=30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-31T18:13:19.391697" elapsed="0.033911"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-31T18:13:19.427604" level="INFO">Clicking element '//input[@placeholder="Password"]'.</msg>
+<arg>//input[@placeholder="Password"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-31T18:13:19.426713" elapsed="0.099480"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-31T18:13:19.528135" level="INFO">Typing text 'invalidpwd' into text field '//input[@placeholder="Password"]'.</msg>
+<arg>//input[@placeholder="Password"]</arg>
+<arg>${Pwd1}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-31T18:13:19.527134" elapsed="0.156577"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-31T18:13:21.686100" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-31T18:13:19.684713" elapsed="2.001387"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-31T18:13:21.688103" level="INFO">Clicking element '//button[@name="login"]'.</msg>
+<arg>//button[@name="login"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-31T18:13:21.688103" elapsed="0.103722"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-31T18:13:26.794642" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-31T18:13:21.793820" elapsed="5.001065"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-31T18:13:26.796677" level="INFO">Clicking element '//button[@name="login"]'.</msg>
+<arg>//button[@name="login"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-31T18:13:26.796677" elapsed="0.143585"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-31T18:13:31.942995" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-31T18:13:26.942299" elapsed="5.000696"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-31T18:13:31.997890" level="INFO">Element '(//div[contains(.,"The password that you've entered is incorrect.")])[9]' is displayed.</msg>
+<arg>(//div[contains(.,"The password that you've entered is incorrect.")])[9]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-31T18:13:31.945000" elapsed="0.052890"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-31T18:13:34.000832" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-31T18:13:31.998853" elapsed="2.002553"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//input[@placeholder="Email address or phone number"]</arg>
+<arg>timeout=30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-31T18:13:34.002411" elapsed="0.037887"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-31T18:13:34.042286" level="INFO">Clicking element '//input[@placeholder="Email address or phone number"]'.</msg>
+<arg>//input[@placeholder="Email address or phone number"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-31T18:13:34.041538" elapsed="0.162278"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-31T18:13:34.205810" level="INFO">Typing text 'karakaramel88@gmail.com' into text field '//input[@placeholder="Email address or phone number"]'.</msg>
+<arg>//input[@placeholder="Email address or phone number"]</arg>
+<arg>${UName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-31T18:13:34.205810" elapsed="0.320147"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//input[@placeholder="Password"]</arg>
+<arg>timeout=30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-31T18:13:34.526949" elapsed="0.037902"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-31T18:13:34.567845" level="INFO">Clicking element '//input[@placeholder="Password"]'.</msg>
+<arg>//input[@placeholder="Password"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-31T18:13:34.566847" elapsed="0.116688"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-31T18:13:34.684581" level="INFO">Typing text 'sunset88' into text field '//input[@placeholder="Password"]'.</msg>
+<arg>//input[@placeholder="Password"]</arg>
+<arg>${Pwd}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-31T18:13:34.684581" elapsed="0.167503"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-31T18:13:36.854412" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-31T18:13:34.853079" elapsed="2.001333"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-31T18:13:36.856372" level="INFO">Clicking element '//button[@name="login"]'.</msg>
+<arg>//button[@name="login"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-31T18:13:36.855379" elapsed="0.097735"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-31T18:13:41.955392" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-31T18:13:36.954149" elapsed="5.001243"/>
+</kw>
+<kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-31T18:13:43.979939" level="INFO">Element '(//div[contains(.,"Invalid username or password")])[8]' did not exist.</msg>
+<arg>(//div[contains(.,"Invalid username or password")])[8]</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="PASS" start="2024-05-31T18:13:41.957372" elapsed="2.022567"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-31T18:13:46.534092" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-31T18:13:46.561128" level="FAIL">Element with locator '//div[@aria-label="Facebook"]' not found.</msg>
+<arg>//div[@aria-label="Facebook"]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="FAIL" start="2024-05-31T18:13:43.981238" elapsed="2.830414">Element with locator '//div[@aria-label="Facebook"]' not found.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-05-31T18:13:46.813117" elapsed="0.020945"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-05-31T18:13:46.836054" elapsed="12.380243"/>
+</kw>
+<status status="FAIL" start="2024-05-31T18:11:32.011011" elapsed="147.206979">Element with locator '//div[@aria-label="Facebook"]' not found.</status>
+</test>
+<status status="FAIL" start="2024-05-31T18:11:31.148155" elapsed="148.075819"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TestAutomationPTDOT">TestAutomationPTDOT</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-05-31T18:11:31.876070" level="WARN">Error in file 'D:\Automation\Facebook\Functions\Functions.robot' on line 21: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-05-31T18:11:37.404965" level="WARN">The chromedriver version (124.0.6367.91) detected in PATH at C:\Users\ASUS\AppData\Local\Programs\Python\Python312\chromedriver.exe might not be compatible with the detected chrome version (125.0.6422.114); currently, chromedriver 125.0.6422.141 is recommended for chrome 125.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>
